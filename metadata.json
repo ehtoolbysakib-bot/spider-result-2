@@ -1,0 +1,6 @@
+{
+  "name": "Spider Result Card Generator",
+  "description": "Cyberpunk spider-themed BD exam result card image generator API and interactive web tool",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

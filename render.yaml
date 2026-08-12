@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: spider-result-api
+    runtime: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PUPPETEER_CACHE_DIR
+        value: ./.cache/puppeteer

@@ -230,11 +230,11 @@ async function handleResultRequest(req: Request, res: Response) {
     browser = await launchBrowser();
     const page = await browser.newPage();
 
-    // Step 1: Set initial viewport
+    // Step 1: Set initial viewport with ultra-high retina device scale for mobile sharpness
     await page.setViewport({
-      width: 1080,
+      width: 960,
       height: 1920,
-      deviceScaleFactor: 2 // Retina quality
+      deviceScaleFactor: 2.5 // Retina ultra-sharp quality for phone screens
     });
 
     // Step 2: Set HTML content and wait until network is idle
